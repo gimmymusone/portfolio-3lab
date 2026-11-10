@@ -1727,7 +1727,10 @@ html{scroll-snap-type:none!important;overflow-anchor:none}body{overflow-anchor:n
 .cs-sec .sec-head{margin-bottom:0}
 .ww-pin:not(.open){height:calc(100svh - 360px);min-height:400px}
 .ww-pin:not(.open) .ww{height:100%}
-.ww-pin.m{height:auto!important;min-height:0!important}
+.ww-pin.m{height:auto!important;min-height:0!important;width:100vw!important;margin-left:calc(50% - 50vw)!important}
+.ww-pin.m .ww{overflow:visible!important}
+.ww-pin.m .wm-list{padding:10px 24px 0}
+html,body{overflow-x:clip}
 .ww-pin.m .ww{display:block;position:relative;height:min(440px,calc(100svh - 300px))}
 .ww-pin.m .ww-open{display:inline-flex}
 .wm-list{padding-top:10px}
