@@ -1704,13 +1704,14 @@ body{background:#fff}
 .pr-card ul{list-style:none;margin:0 0 28px;padding:0;display:grid;gap:12px}
 .pr-card li{position:relative;padding-left:28px;line-height:1.45}
 .pr-card li::before{content:"";position:absolute;left:0;top:.3em;width:16px;height:16px;border-radius:50%;background:var(--volt) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4.5 8.2 7 10.7l4.5-5' fill='none' stroke='%23000' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/100% no-repeat}
-.pr-card li.plus{font-weight:600}
+.pr-card.top li.plus{color:var(--volt);font-weight:500}
 .pr-card .btn{margin-top:auto;justify-content:center}
 .pr-card.top .btn{background:var(--volt);color:#000;border-color:var(--volt)}
 .pr-gest{margin-top:24px;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;background:#f6f6f6;border:1px solid #ececec;border-radius:28px;padding:32px 36px}
 .pr-gest .pr-price{margin:0;font-size:clamp(40px,4.5vw,60px)}
 .pr-gest b{display:block;font-size:20px;letter-spacing:-.01em;margin-bottom:6px}
 .pr-gest p{color:#555;margin:0;line-height:1.5}
+.pr-gest.alt{margin-top:16px}.pr-gest.alt .pr-price{font-size:clamp(26px,3vw,38px)}.pr-tag{display:inline-block;margin-bottom:8px;font:500 12px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:#0a7a43}
 .pr-free{display:inline-block;margin-top:10px;padding:5px 12px;border-radius:100px;background:var(--volt);color:#000;font:600 13px var(--f-sans)}
 @media(max-width:860px){.pr-grid{grid-template-columns:1fr}.pr-gest{grid-template-columns:1fr;gap:12px}.pr-card{padding:28px}}
 </style>
@@ -1718,17 +1719,17 @@ body{background:#fff}
 <body>
 <div class="pf-top">
   <a class="logo" href="https://3-lab.it" aria-label="3-LAB, vai al sito">3<i>-</i>LAB</a>
-  <a class="btn" href="https://3-lab.it/#contact">Parliamone <span class="arrow" aria-hidden="true">→</span></a>
+  <a class="btn" href="#contact">Parliamone <span class="arrow" aria-hidden="true">→</span></a>
 </div>
 <main id="main">
 <section class="cs-sec section" id="portfolio">
   <div class="container">
     <header class="sec-head">
-      <span class="sec-pill"><svg class="sec-pill-ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="3" width="12" height="10" rx="2"/><path d="M2 7h12"/></svg>Case study</span>
+      <span class="sec-pill"><svg class="sec-pill-ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="3" width="12" height="10" rx="2"/><path d="M2 7h12"/></svg>Portfolio</span>
       <h2 class="sec-title">Il nostro <em>portfolio</em></h2>
       <p class="sec-sub">Progetti reali, costruiti intorno ai processi di chi li usa: meno lavoro ripetitivo, più tempo per quello che conta.</p>
     </header>
-    <div class="ww-pin" data-ww-pin style="--n:8">
+    <div class="ww-pin" data-ww-pin style="--n:7">
     <span class="ww-snap" style="top:calc(0 * 55svh)"></span><span class="ww-snap" style="top:calc(1 * 55svh)"></span><span class="ww-snap" style="top:calc(2 * 55svh)"></span><span class="ww-snap" style="top:calc(3 * 55svh)"></span><span class="ww-snap" style="top:calc(4 * 55svh)"></span><span class="ww-snap" style="top:calc(5 * 55svh)"></span><span class="ww-snap" style="top:calc(6 * 55svh)"></span><span class="ww-snap" style="top:calc(7 * 55svh)"></span><span class="ww-snap" style="top:calc(8 * 55svh)"></span>
     <div class="ww" data-ww aria-label="Progetti in evidenza">
       <div class="ww-stage">
@@ -1738,30 +1739,15 @@ body{background:#fff}
         <a class="ww-card" href="https://dott.musone.3-lab.it" target="_blank" rel="noopener"><span class="ww-face"><video src="assets/portfolio/musone.mp4#t=0.1" data-rate="1.6" muted loop playsinline preload="metadata" aria-label="Anteprima del progetto Dott. Musone"></video><span class="ww-act" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 9 9 3M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Apri il sito</span></span></a>
         <a class="ww-card" href="https://laimpianti.3-lab.it" target="_blank" rel="noopener"><span class="ww-face"><video src="assets/portfolio/laimpianti.mp4#t=0.1" data-rate="1.7" muted loop playsinline preload="metadata" aria-label="Anteprima del progetto L&amp;A Impianti"></video><span class="ww-act" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 9 9 3M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Apri il sito</span></span></a>
         <a class="ww-card" href="https://lagestionale.3-lab.it" target="_blank" rel="noopener"><span class="ww-face ww-gest"><span class="gw-win"><span class="gw-bar"><i></i><i></i><i></i><u>lagestionale.3-lab.it</u></span><img src="assets/portfolio/gestionale-la.jpg" alt="Schermata del gestionale L&amp;A con i dati oscurati" loading="lazy"></span><span class="gw-phone" aria-hidden="true"><span class="gw-notch"></span><span class="gw-head"><b>L&amp;A</b><span>L&amp;A Bot<small>bot</small></span></span><span class="gw-chat"><span class="m me">/giornata</span><span class="m bot"><b>Domani</b> · 3 squadre<br><em>Squadra A</em> · <i class="cz">Cantiere scuola</i> · 07:30<br><em>Squadra B</em> · <i class="cz">Manutenzione Rossi</i> · 08:00</span><span class="m bot">Righe da confermare: <b>2</b></span><span class="gw-btns"><u>Conferma</u><u>Apri gestionale</u></span></span></span><span class="ww-act" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 9 9 3M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Apri il sito</span></span></a>
-        <a class="ww-card" href="https://3-lab.it/case-study/"><span class="ww-face"><video src="assets/portfolio/valentino.mp4#t=0.1" data-rate="1.3" muted loop playsinline preload="metadata" aria-label="Anteprima del progetto Valentino Immobiliare"></video><span class="ww-act" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 9 9 3M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Vedi il caso</span></span></a>
-        <div class="ww-card"><span class="ww-face"><img class="cv" src="assets/portfolio/pivot-cover.jpg" alt="Anteprima del progetto Pivot: il tabellone con i prezzi dei drink" loading="lazy"></span></div>
-        <a class="ww-card" href="https://3-lab.it/case-study/"><span class="ww-face ww-oc"><svg class="of" viewBox="0 0 1000 520" role="img" aria-label="Flusso: il ticket arriva all'agente AI, che consulta il company brain e risponde. Se il problema è risolto il cliente esce, altrimenti la richiesta passa al responsabile tecnico, che la risolve e il cliente esce soddisfatto.">
-<g class="of-ln"><path d="M200,250H250"/><path d="M345,300V360" class="of-brain"/><path d="M440,250H500"/><path d="M640,250H686"/><path d="M794,250H860"/><path d="M740,304V380"/><path d="M855,425H926V285"/><path d="M440,280C505,280 540,425 625,425"/></g>
-<g class="of-n"><rect x="30" y="215" width="170" height="70" rx="14"/><text class="t" x="46" y="247">Ticket in entrata</text><text class="s" x="46" y="268">email · chat · modulo</text></g>
-<g class="of-n of-core"><rect x="250" y="200" width="190" height="100" rx="14"/><text class="t" x="266" y="244">Agente AI centrale</text><text class="s" x="266" y="266">capisce la richiesta</text></g>
-<g class="of-n"><rect x="250" y="360" width="190" height="90" rx="14"/><text class="t" x="266" y="400">Company brain</text><text class="s" x="266" y="422">attinge a tutte le info</text></g>
-<g class="of-n"><rect x="500" y="215" width="140" height="70" rx="14"/><text class="t" x="516" y="247">Risposta</text><text class="s" x="516" y="268">al cliente subito</text></g>
-<g class="of-d"><path d="M740,196L794,250L740,304L686,250Z"/><text x="740" y="256" text-anchor="middle">Risolta?</text></g>
-<g class="of-n of-ok"><rect x="860" y="215" width="132" height="70" rx="14"/><text class="t" x="876" y="247">Cliente</text><text class="s" x="876" y="268">esce soddisfatto</text></g>
-<g class="of-n of-ko"><rect x="625" y="380" width="230" height="90" rx="14"/><text class="t" x="641" y="420">Responsabile tecnico</text><text class="s" x="641" y="442">smistata a chi è di competenza</text></g>
-<text class="of-y" x="827" y="240" text-anchor="middle">SÌ</text><text class="of-x" x="754" y="346">NO</text><text class="of-x of-sm" x="452" y="472">RICHIESTA STRAORDINARIA</text>
-<circle r="7" class="of-dot"><animateMotion dur="9s" repeatCount="indefinite" path="M115,250H345H570H740H920"/></circle>
-<circle r="7" class="of-dot of-dot--ko" opacity="0"><animate attributeName="opacity" to="1" begin="4.5s" dur="0.01s" fill="freeze"/><animateMotion dur="9s" begin="4.5s" repeatCount="indefinite" path="M115,250H345H570H740V425H855H926V285"/></circle>
-<circle r="7" class="of-dot of-dot--ko" opacity="0"><animate attributeName="opacity" to="1" begin="1s" dur="0.01s" fill="freeze"/><animateMotion dur="7s" begin="1s" repeatCount="indefinite" path="M115,250H345V280H440C505,280 540,425 625,425H700"/></circle>
-<circle r="6" class="of-dot of-dot--br"><animateMotion dur="3s" repeatCount="indefinite" path="M345,300V360V300"/></circle>
-</svg><span class="ww-act" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 9 9 3M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Vedi il caso</span></span></a>
-        </div>
+        <a class="ww-card" href="#contact"><span class="ww-face"><video src="assets/portfolio/valentino.mp4#t=0.1" data-rate="1.3" muted loop playsinline preload="metadata" aria-label="Anteprima del progetto Valentino Immobiliare"></video><span class="ww-act" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 9 9 3M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Parliamone</span></span></a>
+        <a class="ww-card" href="https://pivotstockexchange.3-lab.it" target="_blank" rel="noopener"><span class="ww-face"><img class="cv" src="assets/portfolio/pivot-cover.jpg" alt="Anteprima del progetto Pivot: il tabellone con i prezzi dei drink" loading="lazy"><span class="ww-act" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 9 9 3M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Apri l'app</span></span></a>
+                </div>
       </div>
       <div class="ww-label" aria-hidden="true">Portfolio</div>
       <button type="button" class="btn ww-open">Vedi il portfolio <span class="arrow" aria-hidden="true">→</span></button>
-      <div class="ww-logos" aria-hidden="true"><span class="wl"><span class="wm-3card">3<i>-</i>CARD</span></span><span class="wl"><img src="assets/portfolio/logos/salzillo.jpg" alt=""><b>Salzillo Costruzioni</b></span><span class="wl"><img src="assets/portfolio/logos/musone.svg" alt="" class="tall"><b>Dott. Musone</b></span><span class="wl"><img src="assets/portfolio/logos/la.png" alt=""></span><span class="wl"><img src="assets/portfolio/logos/la.png" alt="" class="half"><b>Gestionale</b></span><span class="wl"><img src="assets/portfolio/logos/valentino.png" alt=""></span><span class="wl"><img src="assets/portfolio/logos/pivot.png" alt=""></span><span class="wl"><span class="wm-oc">Orienta<i>Campus</i></span></span></div>
+      <div class="ww-logos" aria-hidden="true"><span class="wl"><span class="wm-3card">3<i>-</i>CARD</span></span><span class="wl"><img src="assets/portfolio/logos/salzillo.jpg" alt=""><b>Salzillo Costruzioni</b></span><span class="wl"><img src="assets/portfolio/logos/musone.svg" alt="" class="tall"><b>Dott. Musone</b></span><span class="wl"><img src="assets/portfolio/logos/la.png" alt=""></span><span class="wl"><img src="assets/portfolio/logos/la.png" alt="" class="half"><b>Gestionale</b></span><span class="wl"><img src="assets/portfolio/logos/valentino.png" alt=""></span><span class="wl"><img src="assets/portfolio/logos/pivot.png" alt=""></span></div>
       <div class="ww-title sr-only" aria-live="polite"></div>
-      <ol class="ww-index"><li><button type="button" data-i="0">3Card</button></li><li><button type="button" data-i="1">Salzillo Costruzioni</button></li><li><button type="button" data-i="2">Dott. Musone</button></li><li><button type="button" data-i="3">L&amp;A Impianti</button></li><li><button type="button" data-i="4">Gestionale L&amp;A</button></li><li><button type="button" data-i="5">Valentino Immobiliare</button></li><li><button type="button" data-i="6">Pivot</button></li><li><button type="button" data-i="7">OrientaCampus</button></li></ol>
+      <ol class="ww-index"><li><button type="button" data-i="0">3Card</button></li><li><button type="button" data-i="1">Salzillo Costruzioni</button></li><li><button type="button" data-i="2">Dott. Musone</button></li><li><button type="button" data-i="3">L&amp;A Impianti</button></li><li><button type="button" data-i="4">Gestionale L&amp;A</button></li><li><button type="button" data-i="5">Valentino Immobiliare</button></li><li><button type="button" data-i="6">Pivot</button></li></ol>
     </div>
     </div>
     
@@ -1777,43 +1763,93 @@ body{background:#fff}
     </header>
     <div class="pr-grid">
       <article class="pr-card">
-        <div class="pr-name">Sito statico</div>
+        <div class="pr-name">Sito base</div>
         <div class="pr-price">550 €<small>una tantum</small></div>
         <p class="pr-desc">Veloce, semplice, online in pochi giorni. Ideale per presentarti bene e farti trovare.</p>
         <ul>
-          <li>Sito statico, velocissimo e senza pannelli da aggiornare</li>
-          <li>Fino a 5 pagine (home, chi sono, servizi, contatti…)</li>
-          <li>Grafica su misura, perfetta anche da telefono</li>
-          <li>Modulo contatti e pulsanti per chiamare o scrivere su WhatsApp</li>
+          <li>Sito velocissimo e senza pannelli da aggiornare</li>
+          <li>Sito one page: tutto in una pagina, dalla presentazione ai contatti</li>
+          <li>Sezione recensioni dei tuoi clienti</li>
+          <li>Grafica perfetta su telefono</li>
+          <li>Modulo contatti e pulsante WhatsApp</li>
           <li>SEO di base: titoli, descrizioni e mappa del sito</li>
           <li>Pubblicazione online inclusa</li>
         </ul>
-        <a class="btn" href="https://3-lab.it/#contact">Voglio questo <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn" href="#contact">Voglio questo <span class="arrow" aria-hidden="true">→</span></a>
       </article>
       <article class="pr-card top">
         <div class="pr-name">Sito premium</div>
         <div class="pr-price">1.500 €<small>una tantum</small></div>
         <p class="pr-desc">Il sito che ti distingue: più curato, più visibile, con effetti che i concorrenti non hanno.</p>
         <ul>
-          <li class="plus">Tutto quello che c’è nel sito statico</li>
-          <li class="plus">Ottimizzazione SEO completa, per salire su Google</li>
-          <li class="plus">Rendering 3D e animazioni avanzate</li>
-          <li class="plus">Branding fedele: logo, colori e tono di voce rispettati</li>
-          <li>Più pagine e contenuti oltre le 5 del sito statico</li>
-          <li>Foto e video integrati, ottimizzati per non rallentare il sito</li>
-          <li>Statistiche di visita e verifica delle prestazioni</li>
+          <li>Tutto quello che c’è nel sito base, e in più:</li>
+          <li class="plus">SEO completa per comparire su Google e anche su ChatGPT e le altre AI quando cercano la tua attività</li>
+          <li class="plus">Rendering 3D e animazioni avanzate che fanno restare le persone sul sito</li>
+          <li class="plus">Branding fedele: logo, colori e tono di voce rispettati ovunque</li>
+          <li class="plus">Sito su più pagine (servizi, chi siamo, progetti…) invece di una sola</li>
+          <li class="plus">Dati per Google: stelle, orari e indirizzo visibili già nei risultati di ricerca</li>
+          <li class="plus">Foto e video integrati, ottimizzati per non rallentare il sito</li>
+          <li class="plus">Statistiche di visita e controllo delle prestazioni</li>
         </ul>
-        <a class="btn" href="https://3-lab.it/#contact">Voglio questo <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn" href="#contact">Voglio questo <span class="arrow" aria-hidden="true">→</span></a>
       </article>
     </div>
     <div class="pr-gest">
       <div class="pr-price">20 €<small>al mese</small></div>
       <div>
-        <b>Gestione del sito, obbligatoria su entrambe le formule</b>
-        <p>Modifiche al sito, gestione e assistenza. Si paga una volta l’anno (240 € all’anno).</p>
+        <span class="pr-tag">Consigliato</span>
+        <b>Gestione del sito, ti seguiamo noi</b>
+        <p>Modifiche, gestione e assistenza sempre incluse. Si paga una volta l’anno (240 € all’anno).</p>
         <span class="pr-free">I primi 6 mesi sono gratis</span>
       </div>
     </div>
+    <div class="pr-gest alt">
+      <div class="pr-price">A gettone</div>
+      <div>
+        <b>Senza abbonamento</b>
+        <p>Non paghi nulla al mese. Quando ti serve cambiare qualcosa (testi, foto, una sezione nuova) ci riconosci un gettone per ogni modifica, concordato prima di cominciare.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="cta" id="contact">
+  <div>
+    <span class="eyebrow red" style="margin-bottom:20px">Il primo passo</span>
+    <h2 class="t-display">PARLIAMONE<br>INSIEME.</h2>
+    <p class="sub">Una call conoscitiva gratuita di 30 minuti: ci racconti la tua azienda e capiamo insieme se e come possiamo aiutarti. Lascia la mail (e, se vuoi, il WhatsApp) e ti ricontattiamo.</p>
+    <div class="stepper" id="demoStepper">
+      <div class="step-dots">
+        <div class="step-dot active" data-dot="1">1</div>
+        <div class="step-conn" data-conn="1"><i></i></div>
+        <div class="step-dot" data-dot="2">2</div>
+        <div class="step-conn" data-conn="2"><i></i></div>
+        <div class="step-dot" data-dot="3">3</div>
+      </div>
+      <div class="step-panel on" data-step="1">
+        <h3>Prenota una call conoscitiva</h3>
+        <p>È gratuita e dura 30 minuti. Lascia la tua email e, se preferisci, anche il WhatsApp: ti ricontattiamo entro 24h per fissare il giorno.</p>
+        <input class="step-input" type="email" id="demoEmail" placeholder="latua@email.it" aria-label="La tua email" autocomplete="email" required>
+        <div class="step-tel"><input class="step-input" type="tel" id="demoTel" value="+39 " aria-label="WhatsApp (facoltativo)" autocomplete="tel"><span aria-hidden="true">WhatsApp (facoltativo)</span></div>
+        <input type="text" id="demoSito" name="sito" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+        <div class="step-nav" style="justify-content:flex-end"><button class="step-next" type="button" data-next>Continua →</button></div>
+      </div>
+      <div class="step-panel" data-step="2">
+        <h3>Da dove partiamo?</h3>
+        <p>Scegli la formula che ti interessa, o scrivici direttamente: puoi anche inviare senza selezionare nulla.</p>
+        <div class="step-chips">
+          <button class="step-chip" type="button" data-chip>Sito base · 550 €</button>
+          <button class="step-chip" type="button" data-chip>Sito premium · 1.500 €</button>
+          <button class="step-chip" type="button" data-chip>Altro</button>
+          </div>
+        <textarea class="step-area" id="demoMsg" rows="3" maxlength="1000" placeholder="Vuoi dirci qualcosa in più? Settore, cosa ti serve, cosa oggi ti rallenta… (facoltativo)" aria-label="Il tuo messaggio"></textarea>
+        <p class="step-err" id="demoErr" role="alert" hidden></p>
+        <div class="step-nav"><button class="step-back" type="button" data-back>← Indietro</button><button class="step-next" type="button" data-next>Invia →</button></div>
+      </div>
+      <div class="step-panel" data-step="3">
+        <div class="step-done"><div class="big">🚀</div><h3>Fatto!</h3><p id="demoDone">Ti abbiamo appena scritto da info@3-lab.it (se non la vedi, controlla lo spam). Ti ricontattiamo entro 24h per fissare la call conoscitiva.</p></div>
+      </div>
+    </div>
+    <a class="cta-wa" href="https://wa.me/393791801764?text=Ciao%203-LAB%2C%20vorrei%20saperne%20di%20pi%C3%B9" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>Preferisci scriverci subito? WhatsApp</a>
   </div>
 </section>
 </main>
@@ -1838,50 +1874,21 @@ body{background:#fff}
   const O={c:[].slice.call(wheel.querySelectorAll('.ww-card')),l:[].slice.call(logosBox.querySelectorAll('.wl')),b:[].slice.call(index.querySelectorAll('li'))};
   function collect(){cards=[].slice.call(wheel.querySelectorAll('.ww-card'));faces=cards.map(c=>c.firstElementChild);vids=faces.map(f=>f.querySelector('video'));logos=[].slice.call(logosBox.querySelectorAll('.wl'));btns=[].slice.call(index.querySelectorAll('button'));}
   collect();
-  if(matchMedia('(max-width:760px)').matches){   // telefono: elenco verticale al posto della ruota
-    pin.classList.add('m');
-    const KEYS=['3card','salzillo','musone','laimpianti','gestionale','valentino','pivot','oc'],ORD=['oc','gestionale','3card','pivot','salzillo','laimpianti','musone','valentino'];   // stesso ordine della ruota
-    const box=document.createElement('div');box.className='wm';
-    box.innerHTML='<button type="button" class="btn wm-open">Vedi il portfolio <span class="arrow" aria-hidden="true">→</span></button><div class="wm-list" hidden></div>';
-    pin.appendChild(box);
-    const list=box.querySelector('.wm-list'),opn=box.querySelector('.wm-open'),reduceM=matchMedia('(prefers-reduced-motion: reduce)').matches;
-    let ord=ORD,built=false,io=null;
-    function build(){
-      list.innerHTML='';if(io)io.disconnect();
-      io=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(!v.play)return;if(e.isIntersecting&&!reduceM)v.play().catch(()=>{});else v.pause()}),{threshold:.5});
-      for(let j=0;j<ord.length;j++){
-        const i=KEYS.indexOf(ord[j]),card=O.c[i],logo=O.l[i],name=O.b[i].textContent.trim(),href=card.getAttribute('href'),ext=card.target==='_blank';
-        const a=document.createElement('article');a.className='wm-c';a.style.animationDelay=(j*60)+'ms';
-        const lg=document.createElement('div');lg.className='wm-logo';lg.appendChild(logo.cloneNode(true));a.appendChild(lg);
-        const md=document.createElement(href?'a':'div');md.className='wm-media';if(href){md.href=href;if(ext){md.target='_blank';md.rel='noopener'}}
-        const face=card.firstElementChild.cloneNode(true);md.appendChild(face);a.appendChild(md);
-        const ft=document.createElement('div');ft.className='wm-foot';ft.innerHTML='<b></b>';ft.firstChild.textContent=name;
-        if(href){const l=document.createElement('a');l.className='btn';l.href=href;if(ext){l.target='_blank';l.rel='noopener'}l.innerHTML=(ext?'Apri il sito':'Vedi il caso')+' <span class="arrow" aria-hidden="true">→</span>';ft.appendChild(l)}
-        a.appendChild(ft);list.appendChild(a);
-        const v=face.querySelector('video');if(v){v.removeAttribute('autoplay');io.observe(v)}
-      }
-      built=true;
-    }
-    opn.addEventListener('click',()=>{if(!built)build();list.hidden=false;opn.hidden=true;setTimeout(()=>list.scrollIntoView({behavior:reduceM?'auto':'smooth',block:'start'}),60)});
-    window.wwFirst=function(per){ord=per==='medici'?['musone'].concat(ORD.filter(x=>x!=='musone')):ORD;if(built)build()};
-    try{window.wwFirst(localStorage.getItem('per')||'generale')}catch(e){window.wwFirst('generale')}
-    return;
-  }
-  const N=cards.length,reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const N=cards.length,reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
   const CARD_H=.5,RATIO=1.6,STEP=40,DRUM=2.22,LENS=2.7,RING_R=.78,BOW=1.82,TITLE=.088,INDEX=.04,CULL=1.6,EASE=.085;
   const clamp=(v,a,b)=>Math.min(b,Math.max(a,v)),lerp=(a,b,t)=>a+(b-a)*t,rad=d=>d*Math.PI/180;
   let turn=0,target=0,active=-1,M=null,visible=false,frame=0,playing=-1;
   // ordine per importanza: prima i lavori più rilevanti (flusso OrientaCampus, gestionale L&A), i siti dopo, Valentino sempre ultimo; con «Per chi» = medici apre il sito del dott. Musone
-  const KEYS=['3card','salzillo','musone','laimpianti','gestionale','valentino','pivot','oc'],ORD=['oc','gestionale','3card','pivot','salzillo','laimpianti','musone','valentino'];
+  const KEYS=['3card','salzillo','musone','laimpianti','gestionale','valentino','pivot'],ORD=['salzillo','musone','laimpianti','valentino','3card','pivot','gestionale'];
   window.wwFirst=function(per){
-    (per==='medici'?['musone'].concat(ORD.filter(x=>x!=='musone')):ORD).forEach(key=>{const i=KEYS.indexOf(key);wheel.appendChild(O.c[i]);logosBox.appendChild(O.l[i]);index.appendChild(O.b[i]);});
+    ORD.forEach(key=>{const i=KEYS.indexOf(key);wheel.appendChild(O.c[i]);logosBox.appendChild(O.l[i]);index.appendChild(O.b[i]);});
     collect();if(playing>=0&&vids[playing]){}playing=-1;active=-1;
   };
 
   function measure(){
     const w=stage.clientWidth,h=stage.clientHeight;
     const ratio=w<760?1.12:RATIO,cw=Math.min(h*CARD_H*ratio,w*(w<760?.88:.56)),ch=cw/ratio; // telefono: card più alta, quasi a tutta larghezza
-    M={cw:cw,ch:ch,ringR:ch*RING_R,drumR:ch*DRUM,bow:ch*BOW,ringScale:clamp((2*Math.PI*ch*RING_R/N*.82)/(cw||1),.16,1)};
+    M={cw:cw,ch:ch,ringR:(w<760?Math.min(ch*RING_R,w*.34):ch*RING_R),drumR:ch*DRUM,bow:ch*BOW,ringScale:clamp((2*Math.PI*(w<760?Math.min(ch*RING_R,w*.34):ch*RING_R)/N*.82)/(cw||1),.16,1)};
     stage.style.perspective=(ch*LENS)+'px';
     cards.forEach(c=>{c.style.width=cw+'px';c.style.height=ch+'px';c.style.marginLeft=(-cw/2)+'px';c.style.marginTop=(-ch/2)+'px';});
     label.style.fontSize=(ch*TITLE)+'px';
@@ -1945,6 +1952,55 @@ body{background:#fff}
   measure();fromScroll();setActive(0);
   new ResizeObserver(()=>{measure();fromScroll();}).observe(stage);
   new IntersectionObserver(es=>{visible=es[0].isIntersecting;if(visible&&!frame)frame=requestAnimationFrame(draw);if(!visible)video(-1);},{threshold:0}).observe(pin);
+})();
+</script>
+<script>
+(function(){
+  /* Demo stepper */
+  const s=document.getElementById('demoStepper');
+  if(s){
+    const panels=Array.from(s.querySelectorAll('.step-panel'));
+    const dots=Array.from(s.querySelectorAll('.step-dot'));
+    const conns=Array.from(s.querySelectorAll('.step-conn'));
+    let cur=1;
+    function show(n){
+      panels.forEach(p=>p.classList.toggle('on', +p.dataset.step===n));
+      dots.forEach(d=>{ const dn=+d.dataset.dot; d.classList.toggle('active',dn===n); d.classList.toggle('done',dn<n); d.innerHTML=dn<n?'✓':dn; });
+      conns.forEach(c=>c.classList.toggle('done', +c.dataset.conn < n));
+      cur=n;
+    }
+    const em=document.getElementById('demoEmail');
+    const tel=document.getElementById('demoTel');
+    const TEL_RE=/^\+?[0-9]{8,15}$/;
+    const telPulito=()=>{ const t=tel.value.replace(/[\s.\-()]/g,''); return /^\+?\d{0,3}$/.test(t)?'':t; };
+    tel.addEventListener('input',()=>tel.parentNode.classList.toggle('pieno',!!telPulito()));
+    const err=document.getElementById('demoErr');
+    const LEAD_URL='https://form.3-lab.it/lead';   // Worker in worker-contatti/
+    async function invia(btn){
+      const sel=s.querySelector('[data-chip].sel');
+      btn.disabled=true; const label=btn.textContent; btn.textContent='Invio…'; err.hidden=true;
+      try{
+        const r=await fetch(LEAD_URL,{method:'POST',headers:{'Content-Type':'application/json'},
+          body:JSON.stringify({email:em.value.trim(),telefono:telPulito()||null,interesse:sel?sel.textContent.trim():null,messaggio:document.getElementById('demoMsg').value.trim(),pagina:location.href,sito:document.getElementById('demoSito').value})});
+        if(!r.ok) throw new Error(r.status);
+        show(3);
+      }catch(e){
+        err.innerHTML='Invio non riuscito. Riprova, oppure scrivici a <a href="mailto:info@3-lab.it">info@3-lab.it</a>.';
+        err.hidden=false;
+      }finally{ btn.disabled=false; btn.textContent=label; }
+    }
+    s.querySelectorAll('[data-next]').forEach(b=>b.addEventListener('click',()=>{
+      if(cur===1){ if(!/.+@.+\..+/.test(em.value.trim())){ em.style.borderColor='var(--signal)'; em.focus(); return; } em.style.borderColor='';
+        if(telPulito()&&!TEL_RE.test(telPulito())){ tel.style.borderColor='var(--signal)'; tel.focus(); return; } tel.style.borderColor=''; show(2); return; }
+      if(cur===2) invia(b);
+    }));
+    s.querySelectorAll('[data-back]').forEach(b=>b.addEventListener('click',()=>{ if(cur>1) show(cur-1); }));
+    // Invio da tastiera: Enter sull'email prosegue, Enter nel messaggio (senza shift) manda.
+    [em,tel].forEach(i=>i.addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); s.querySelector('[data-step="1"] [data-next]').click(); } }));
+    document.getElementById('demoMsg').addEventListener('keydown',e=>{ if(e.key==='Enter'&&!e.shiftKey){ e.preventDefault(); s.querySelector('[data-step="2"] [data-next]').click(); } });
+    s.querySelectorAll('[data-chip]').forEach(c=>c.addEventListener('click',()=>{ s.querySelectorAll('[data-chip]').forEach(x=>x.classList.remove('sel')); c.classList.add('sel'); }));
+  }
+
 })();
 </script>
 </body>
