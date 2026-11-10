@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="3LAB">
+  <!-- Tre triangoli intrecciati. Ordine: nero sotto, verde sopra il nero, rosso sopra tutti; nei due incroci in alto l'ordine si inverte
+       (nero sopra verde, verde sopra rosso) con un ritaglio che segue la banda attraversata (niente cerchi: nessun arco visibile). -->
+  <defs>
+    <clipPath id="a"><polygon points="302.2,347.55 245,314.75 290.6,234.95 347.8,267.75"/></clipPath>
+    <clipPath id="b"><polygon points="509.4,347.55 452.2,314.75 497.8,234.95 555,267.75"/></clipPath>
+  </defs>
+  <g fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10">
+    <path d="M250 210L410 490L90 490Z" stroke="#FFFFFF" stroke-width="46"/><path d="M250 210L410 490L90 490Z" stroke="#111111" stroke-width="40"/>
+    <path d="M400 110L560 390L240 390Z" stroke="#FFFFFF" stroke-width="46"/><path d="M400 110L560 390L240 390Z" stroke="#19E67C" stroke-width="40"/>
+    <path d="M550 210L710 490L390 490Z" stroke="#FFFFFF" stroke-width="46"/><path d="M550 210L710 490L390 490Z" stroke="#FF3B30" stroke-width="40"/>
+    <g clip-path="url(#a)"><path d="M250 210L410 490L90 490Z" stroke="#FFFFFF" stroke-width="46"/><path d="M250 210L410 490L90 490Z" stroke="#111111" stroke-width="40"/></g>
+    <g clip-path="url(#b)"><path d="M400 110L560 390L240 390Z" stroke="#FFFFFF" stroke-width="46"/><path d="M400 110L560 390L240 390Z" stroke="#19E67C" stroke-width="40"/></g>
+  </g>
+</svg>
