@@ -1917,7 +1917,7 @@ html{scroll-snap-type:none!important}
       });
     }
     root.style.display='none';listEl.hidden=false;
-    requestAnimationFrame(()=>requestAnimationFrame(()=>{const c=listEl.querySelector('.wm-c');(c||listEl).scrollIntoView({behavior:'auto',block:'center'})}));
+    requestAnimationFrame(()=>requestAnimationFrame(()=>{const h=document.querySelector('#portfolio .sec-head');scrollTo({top:Math.max(0,h.getBoundingClientRect().top+scrollY-92),behavior:'auto'})}));
   }
   const N=cards.length,reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
   const CARD_H=.5,RATIO=1.6,STEP=40,DRUM=2.22,LENS=2.7,RING_R=.78,BOW=1.82,TITLE=.088,INDEX=.04,CULL=1.6,EASE=.085;
