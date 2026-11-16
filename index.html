@@ -1719,6 +1719,11 @@ body{background:#fff}
 .pr-card .btn{justify-content:center}
 .pr-card.top .btn{background:var(--volt);color:#000;border-color:var(--volt)}
 .pr-tag{align-self:flex-start;margin-bottom:10px;font:500 12px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:#0a7a43}
+.pr-seo .seo-logos{grid-template-columns:repeat(3,1fr);gap:10px;margin:0 0 22px}
+.pr-seo .seo-logos li{padding:14px 6px;display:flex;flex-direction:column;align-items:center;gap:8px;border:1px solid rgba(0,0,0,.1);border-radius:16px;font:500 13px var(--f-sans);text-align:center}
+.pr-seo .seo-logos li::before{display:none}
+.pr-seo .seo-logos img{display:block}
+@media(max-width:480px){.pr-seo .seo-logos{grid-template-columns:repeat(2,1fr)}}
 .pr-free{align-self:flex-start;padding:5px 12px;border-radius:100px;background:var(--volt);color:#000;font:600 13px var(--f-sans)}
 /* prima schermata: titolo e cerchio insieme */
 html{scroll-snap-type:none!important;overflow-anchor:none}body{overflow-anchor:none}
@@ -1844,6 +1849,27 @@ var n=0,t=setInterval(function(){top();if(++n>25||moved)clearInterval(t)},120);}
           <a class="btn" href="#contact" style="margin-top:22px">Prenota la call conoscitiva <span class="arrow" aria-hidden="true">→</span></a>
         </article>
       </div>
+
+      <div class="pr-lab">Visibilità su Google</div>
+      <article class="pr-card pr-seo on">
+        <span class="pr-tag">Extra · si aggiunge a qualsiasi sito</span>
+        <div class="pr-price">200 €<small>una tantum</small></div>
+        <p class="pr-desc">Il tuo sito esce quando cercano la tua attività su Google. E ti trovano anche quando chiedono a ChatGPT, Gemini e Copilot.</p>
+        <ul class="seo-logos" aria-label="Dove ti facciamo comparire">
+          <li><img src="assets/seo/google.svg" alt="" width="28" height="28"><span>Google</span></li>
+          <li><img src="assets/seo/gbp.svg" alt="" width="28" height="28"><span>Business Profile</span></li>
+          <li><img src="assets/seo/console.svg" alt="" width="28" height="28"><span>Search Console</span></li>
+          <li><img src="assets/seo/chatgpt.svg" alt="" width="28" height="28"><span>ChatGPT</span></li>
+          <li><img src="assets/seo/gemini.svg" alt="" width="28" height="28"><span>Gemini</span></li>
+          <li><img src="assets/seo/copilot.svg" alt="" width="28" height="28"><span>Copilot</span></li>
+        </ul>
+        <ul>
+          <li>Curiamo la tua scheda Google Business: orari, foto, recensioni</li>
+          <li>Configuriamo Search Console e inviamo il sito a Google</li>
+          <li>Testi e dati ottimizzati per farti citare dalle AI</li>
+        </ul>
+        <a class="btn" href="#contact">Voglio comparire su Google <span class="arrow" aria-hidden="true">→</span></a>
+      </article>
     </div>
   </div>
 </section>
