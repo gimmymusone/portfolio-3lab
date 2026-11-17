@@ -495,9 +495,10 @@ body.sm-open{overflow:hidden}
 .pr-tag-dk{color:var(--volt)}
 .pr-3card{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:0 0 22px;padding:10px 10px 10px 18px;border-radius:18px;border:1px solid rgba(25,230,124,.45);background:rgba(25,230,124,.08);color:#fff;text-decoration:none;transition:border-color .2s,transform .2s}
 .pr-3card:hover{border-color:var(--volt);transform:translateY(-1px)}
-.pr-3card-in{font:600 17px var(--f-sans);color:var(--volt)}
-.pr-3card-logo{display:inline-flex;align-items:center;padding:10px 20px;border-radius:12px;background:#000;border:1px solid rgba(255,255,255,.18)}
-.pr-3card-logo .wm-3card{font-size:30px;color:#fff}
+.pr-3card-in{font:600 16px/1.25 var(--f-sans);color:var(--volt)}
+.pr-3card-logo{display:block;height:58px;width:auto;flex:none}
+.pr-seo-lnk{color:inherit;text-decoration:underline;text-decoration-color:var(--volt-deep);text-underline-offset:3px}
+#seo{scroll-margin-top:90px}
 .qz-opts[data-multi] .qz-opt.sel{border-color:var(--volt-deep);background:var(--mint)}
 .pr-card button.btn{font:inherit;cursor:pointer}
 .qz{position:fixed;inset:0;margin:auto;height:fit-content;width:min(560px,calc(100vw - 32px));max-height:calc(100dvh - 32px);border:none;border-radius:28px;padding:30px;background:#fff;color:var(--ink);box-shadow:0 40px 90px -30px rgba(0,0,0,.55);overflow:auto}
@@ -1855,16 +1856,16 @@ var n=0,t=setInterval(function(){top();if(++n>25||moved)clearInterval(t)},120);}
           <p class="pr-desc">Abbiamo tutto quello di cui hai bisogno. Tutto quello che c’è nel sito base e in più possiamo offrirti:</p>
           <ul>
             <li class="plus">Design unico, con rendering 3D e animazioni avanzate</li>
-            <li class="plus">Visibilità su Google e nelle risposte delle AI</li>
+            <li class="plus"><a class="pr-seo-lnk" href="#seo">Visibilità su Google e nelle risposte delle AI <span aria-hidden="true">↓</span></a></li>
             <li class="plus">AI agentica che risponde ai clienti e gestisce le prenotazioni</li>
             <li class="plus">App su misura per i tuoi clienti o il tuo team</li>
             <li class="plus">Piattaforma aziendale che tiene insieme clienti, squadre e numeri</li>
             <li class="plus">Automazioni per i lavori ripetitivi</li>
             <li class="plus">Consulenza su business plan, marketing e margini</li>
           </ul>
-          <a class="pr-3card" href="https://3card.3-lab.it" target="_blank" rel="noopener" aria-label="3Card inclusa: scopri la carta fedeltà">
-            <span class="pr-3card-in">Inclusa</span>
-            <span class="pr-3card-logo"><span class="wm-3card">3<i>-</i>CARD</span></span>
+          <a class="pr-3card" href="https://3card.3-lab.it" target="_blank" rel="noopener" aria-label="Servizi gratuiti se richiesti: 3Card, scopri la carta fedeltà">
+            <span class="pr-3card-in">Servizi gratuiti<br>se richiesti</span>
+            <img class="pr-3card-logo" src="assets/3card-logo.svg" alt="3Card" width="150" height="81">
           </a>
           <button class="btn" type="button" data-qz-open>Scopri il tuo prezzo in 30 secondi <span class="arrow" aria-hidden="true">→</span></button>
         </article>
@@ -1890,7 +1891,7 @@ var n=0,t=setInterval(function(){top();if(++n>25||moved)clearInterval(t)},120);}
         </article>
       </div>
 
-      <div class="pr-lab">Visibilità su Google</div>
+      <div class="pr-lab" id="seo">Visibilità su Google</div>
       <article class="pr-card pr-seo on">
         <span class="pr-tag">Extra · su richiesta</span>
         <p class="pr-desc">Il tuo sito esce quando cercano la tua attività su Google. E ti trovano anche quando chiedono a ChatGPT, Gemini e Copilot.</p>
