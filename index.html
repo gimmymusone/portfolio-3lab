@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio e prezzi dei siti web — 3-LAB</title>
-<meta name="description" content="I progetti realizzati da 3-LAB e i prezzi dei siti web: sito statico a 550 €, sito premium a 1.500 €, gestione a 20 € al mese con i primi 6 mesi gratis.">
+<meta name="description" content="I progetti realizzati da 3-LAB e i prezzi dei siti web: sito statico a 550 €, sito premium su misura, gestione a 20 € al mese con i primi 6 mesi gratis.">
 <link rel="canonical" href="https://portfolio.3-lab.it/">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#000000">
@@ -490,6 +490,38 @@ body.sm-open{overflow:hidden}
 .tm-in svg{width:22px;height:22px}
 @media(max-width:900px){.tm-grid{grid-template-columns:1fr;max-width:420px;margin:0 auto}}
 @media(prefers-reduced-motion:reduce){.tm-card,.tm-spark,.tm-av{transition:none}}
+
+/* ================= QUESTIONARIO PREMIUM ================= */
+.pr-tag-dk{color:var(--volt)}
+.pr-3card{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:0 0 22px;padding:10px 10px 10px 18px;border-radius:18px;border:1px solid rgba(25,230,124,.45);background:rgba(25,230,124,.08);color:#fff;text-decoration:none;transition:border-color .2s,transform .2s}
+.pr-3card:hover{border-color:var(--volt);transform:translateY(-1px)}
+.pr-3card-in{font:600 17px var(--f-sans);color:var(--volt)}
+.pr-3card-logo{display:inline-flex;align-items:center;padding:10px 20px;border-radius:12px;background:#000;border:1px solid rgba(255,255,255,.18)}
+.pr-3card-logo .wm-3card{font-size:30px;color:#fff}
+.qz-opts[data-multi] .qz-opt.sel{border-color:var(--volt-deep);background:var(--mint)}
+.pr-card button.btn{font:inherit;cursor:pointer}
+.qz{position:fixed;inset:0;margin:auto;height:fit-content;width:min(560px,calc(100vw - 32px));max-height:calc(100dvh - 32px);border:none;border-radius:28px;padding:30px;background:#fff;color:var(--ink);box-shadow:0 40px 90px -30px rgba(0,0,0,.55);overflow:auto}
+.qz::backdrop{background:rgba(0,0,0,.45);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.qz[open]{animation:qzIn .35s cubic-bezier(.16,1,.3,1)}
+@keyframes qzIn{from{opacity:0;transform:translateY(18px) scale(.98)}to{opacity:1;transform:none}}
+.qz-top{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+.qz-bar{flex:1;height:4px;border-radius:4px;background:#ededed;overflow:hidden}
+.qz-bar i{display:block;height:100%;width:0;background:var(--volt-deep);transition:width .35s}
+.qz-n{font:500 12px var(--f-mono);color:var(--slate);letter-spacing:.06em}
+.qz-x{border:none;background:#f2f2f2;width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:18px;line-height:1;color:var(--ink)}
+.qz-q{display:none}
+.qz-q.on{display:block;animation:stepIn .35s ease}
+.qz-q h3{font:600 22px/1.25 var(--f-sans);letter-spacing:-.01em;margin:0 0 6px}
+.qz-q>p{font-size:14px;color:var(--slate);margin:0 0 16px;line-height:1.5}
+.qz-opts{display:grid;gap:10px}
+.qz-opt{display:flex;flex-direction:column;align-items:flex-start;gap:2px;width:100%;text-align:left;border:1.5px solid #e0e0e0;border-radius:18px;padding:13px 18px;background:#fff;color:var(--ink);font:500 15px var(--f-sans);cursor:pointer;transition:border-color .2s,background .2s}
+.qz-opt small{font-weight:400;font-size:13px;color:var(--slate)}
+.qz-opt:hover{border-color:#bdbdbd}
+.qz-opt.sel{border-color:var(--volt-deep);background:var(--mint)}
+.qz-nav{display:flex;justify-content:space-between;align-items:center;margin-top:20px;gap:10px}
+.qz .step-input{margin-top:10px}
+@media(max-width:760px){.qz{padding:24px}}
+@media(prefers-reduced-motion:reduce){.qz[open],.qz-q.on{animation:none}}
 
 /* ================= DEMO STEPPER (Tappa 4) ================= */
 .stepper{max-width:540px;margin:36px auto 0;background:#ffffff;border-radius:28px;padding:30px;text-align:left;box-shadow:0 34px 64px -34px rgba(0,0,0,.35)}
@@ -1807,29 +1839,34 @@ var n=0,t=setInterval(function(){top();if(++n>25||moved)clearInterval(t)},120);}
       <div class="pr-panels" data-pn="sito">
         <article class="pr-card on" data-k="base">
           <div class="pr-price">550 €<small>una tantum</small></div>
-          <p class="pr-desc">Veloce, semplice, online in pochi giorni. Ideale per presentarti bene e farti trovare.</p>
+          <p class="pr-desc">Veloce, semplice, online in pochi giorni. Base sì, ma bello come tutto quello che facciamo.</p>
           <ul>
             <li>Sito velocissimo e senza pannelli da aggiornare</li>
-            <li>One page: tutto in una pagina, dalla presentazione ai contatti</li>
+            <li>Branding fedele: logo, colori e tono di voce</li>
             <li>Sezione recensioni dei tuoi clienti</li>
-            <li>Grafica perfetta su telefono</li>
             <li>Modulo contatti e pulsante WhatsApp</li>
-            <li>SEO di base e pubblicazione online incluse</li>
+            <li>Statistiche di visita</li>
           </ul>
           <a class="btn" href="#contact">Voglio il sito base <span class="arrow" aria-hidden="true">→</span></a>
         </article>
         <article class="pr-card top" data-k="premium">
-          <div class="pr-price">1.500 €<small>una tantum</small></div>
-          <p class="pr-desc">Il sito che ti distingue: più curato, più visibile, con effetti che i concorrenti non hanno.</p>
+          <span class="pr-tag pr-tag-dk">Preventivo su misura</span>
+          <div class="pr-price">Su misura</div>
+          <p class="pr-desc">Abbiamo tutto quello di cui hai bisogno. Tutto quello che c’è nel sito base e in più possiamo offrirti:</p>
           <ul>
-            <li>Tutto quello che c’è nel sito base, e in più:</li>
-            <li class="plus">Rendering 3D e animazioni avanzate</li>
-            <li class="plus">Branding fedele: logo, colori e tono di voce</li>
-            <li class="plus">Sito su più pagine</li>
-            <li class="plus">Stelle, orari e indirizzo visibili su Google</li>
-            <li class="plus">Statistiche di visita</li>
+            <li class="plus">Design unico, con rendering 3D e animazioni avanzate</li>
+            <li class="plus">Visibilità su Google e nelle risposte delle AI</li>
+            <li class="plus">AI agentica che risponde ai clienti e gestisce le prenotazioni</li>
+            <li class="plus">App su misura per i tuoi clienti o il tuo team</li>
+            <li class="plus">Piattaforma aziendale che tiene insieme clienti, squadre e numeri</li>
+            <li class="plus">Automazioni per i lavori ripetitivi</li>
+            <li class="plus">Consulenza su business plan, marketing e margini</li>
           </ul>
-          <a class="btn" href="#contact">Voglio il sito premium <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="pr-3card" href="https://3card.3-lab.it" target="_blank" rel="noopener" aria-label="3Card inclusa: scopri la carta fedeltà">
+            <span class="pr-3card-in">Inclusa</span>
+            <span class="pr-3card-logo"><span class="wm-3card">3<i>-</i>CARD</span></span>
+          </a>
+          <button class="btn" type="button" data-qz-open>Scopri il tuo prezzo in 30 secondi <span class="arrow" aria-hidden="true">→</span></button>
         </article>
       </div>
 
@@ -1855,8 +1892,7 @@ var n=0,t=setInterval(function(){top();if(++n>25||moved)clearInterval(t)},120);}
 
       <div class="pr-lab">Visibilità su Google</div>
       <article class="pr-card pr-seo on">
-        <span class="pr-tag">Extra · si aggiunge a qualsiasi sito</span>
-        <div class="pr-price">200 €<small>una tantum</small></div>
+        <span class="pr-tag">Extra · su richiesta</span>
         <p class="pr-desc">Il tuo sito esce quando cercano la tua attività su Google. E ti trovano anche quando chiedono a ChatGPT, Gemini e Copilot.</p>
         <ul class="seo-logos" aria-label="Dove ti facciamo comparire">
           <li><img src="assets/seo/google.svg" alt="" width="28" height="28"><span>Google</span></li>
@@ -1902,7 +1938,7 @@ var n=0,t=setInterval(function(){top();if(++n>25||moved)clearInterval(t)},120);}
         <p>Scegli la formula che ti interessa, o scrivici direttamente: puoi anche inviare senza selezionare nulla.</p>
         <div class="step-chips">
           <button class="step-chip" type="button" data-chip>Sito base · 550 €</button>
-          <button class="step-chip" type="button" data-chip>Sito premium · 1.500 €</button>
+          <button class="step-chip" type="button" data-chip>Sito premium · su misura</button>
           <button class="step-chip" type="button" data-chip>Altro</button>
           </div>
         <textarea class="step-area" id="demoMsg" rows="3" maxlength="1000" placeholder="Vuoi dirci qualcosa in più? Settore, cosa ti serve, cosa oggi ti rallenta… (facoltativo)" aria-label="Il tuo messaggio"></textarea>
@@ -1917,6 +1953,52 @@ var n=0,t=setInterval(function(){top();if(++n>25||moved)clearInterval(t)},120);}
   </div>
 </section>
 </main>
+<dialog class="qz" id="qz" aria-label="Preventivo sito premium">
+  <div class="qz-top"><span class="qz-n" data-qz-n>1 / 7</span><div class="qz-bar"><i data-qz-bar></i></div><button class="qz-x" type="button" data-qz-close aria-label="Chiudi">×</button></div>
+    <div class="qz-q" data-q="1" data-t="Che attività hai?">
+      <h3>Che attività hai?</h3>
+      <p>Così ti mostriamo i lavori più vicini al tuo settore.</p>
+      <div class="qz-opts"><button class="qz-opt" type="button" data-v="Negozio, ristorante o locale">Negozio, ristorante o locale</button><button class="qz-opt" type="button" data-v="Studio professionale">Studio professionale<small>medico, legale, tecnico, consulenza</small></button><button class="qz-opt" type="button" data-v="Impresa, edilizia o industria">Impresa, edilizia o industria</button><button class="qz-opt" type="button" data-v="Immobiliare">Immobiliare</button><button class="qz-opt" type="button" data-v="Altro">Altro</button></div>
+    </div>
+    <div class="qz-q" data-q="2" data-t="Cosa deve fare il sito per te?">
+      <h3>Cosa deve fare il sito per te?</h3>
+      <p>Scegli la cosa più importante.</p>
+      <div class="qz-opts"><button class="qz-opt" type="button" data-v="Portarmi nuovi clienti">Portarmi nuovi clienti<small>farmi trovare da chi cerca quello che faccio</small></button><button class="qz-opt" type="button" data-v="Far capire che siamo i migliori">Far capire che siamo i migliori<small>chi arriva deve fidarsi subito</small></button><button class="qz-opt" type="button" data-v="Mostrare lavori e prodotti">Mostrare lavori e prodotti<small>in modo che si ricordino di noi</small></button><button class="qz-opt" type="button" data-v="Ricevere prenotazioni e richieste">Ricevere prenotazioni e richieste</button></div>
+    </div>
+    <div class="qz-q" data-q="3" data-t="Che effetto vuoi dare?">
+      <h3>Che effetto vuoi dare?</h3>
+      <p>Non c’è una risposta giusta: dipende da chi sono i tuoi clienti.</p>
+      <div class="qz-opts"><button class="qz-opt" type="button" data-v="Pulito ed elegante">Pulito ed elegante<small>sobrio, curato in ogni dettaglio</small></button><button class="qz-opt" type="button" data-v="Animato e coinvolgente">Animato e coinvolgente<small>movimento mentre si scorre</small></button><button class="qz-opt" type="button" data-v="3D e interattivo">3D e interattivo<small>unico nel tuo settore, nessun concorrente ce l’ha</small></button></div>
+    </div>
+    <div class="qz-q" data-q="4" data-t="Interessato anche a:">
+      <h3>Ti interessa anche altro?</h3>
+      <p>Puoi sceglierne più di uno, o nessuno. Ne parliamo comunque insieme.</p>
+      <div class="qz-opts" data-multi><button class="qz-opt" type="button" data-v="Carta fedeltà 3Card">Carta fedeltà 3Card</button><button class="qz-opt" type="button" data-v="Visibilità su Google">Visibilità su Google<small>e nelle risposte delle AI</small></button><button class="qz-opt" type="button" data-v="AI agentica">AI agentica<small>assistenti e agenti AI</small></button><button class="qz-opt" type="button" data-v="App su misura">App su misura</button><button class="qz-opt" type="button" data-v="Piattaforma aziendale">Piattaforma aziendale<small>clienti, squadre, magazzino, numeri</small></button><button class="qz-opt" type="button" data-v="Automazioni">Automazioni</button><button class="qz-opt" type="button" data-v="Consulenza">Consulenza<small>business plan, marketing, costi</small></button></div>
+      <div class="qz-nav"><button class="step-back" type="button" data-qz-back>← Indietro</button><button class="step-next" type="button" data-qz-multi>Continua →</button></div>
+    </div>
+    <div class="qz-q" data-q="5" data-t="Quanto investiresti in un sito 3D unico e funzionale?">
+      <h3>Quanto investiresti in un sito 3D unico e funzionale?</h3>
+      <p>È solo per orientarci: ti proponiamo la soluzione giusta per il tuo budget.</p>
+      <div class="qz-opts"><button class="qz-opt" type="button" data-v="Fino a 1.000 €">Fino a 1.000 €</button><button class="qz-opt" type="button" data-v="Tra 1.000 € e 2.000 €">Tra 1.000 € e 2.000 €</button><button class="qz-opt" type="button" data-v="Tra 2.000 € e 4.000 €">Tra 2.000 € e 4.000 €</button><button class="qz-opt" type="button" data-v="Oltre 4.000 €">Oltre 4.000 €</button><button class="qz-opt" type="button" data-v="Non lo so, consigliatemi voi">Non lo so, consigliatemi voi</button></div>
+    </div>
+    <div class="qz-q" data-q="6" data-t="Quando ti servirebbe?">
+      <h3>Quando ti servirebbe?</h3>
+      <p></p>
+      <div class="qz-opts"><button class="qz-opt" type="button" data-v="Il prima possibile">Il prima possibile</button><button class="qz-opt" type="button" data-v="Entro 1–3 mesi">Entro 1–3 mesi</button><button class="qz-opt" type="button" data-v="Sto solo valutando">Sto solo valutando</button></div>
+    </div>
+    <div class="qz-q" data-q="7">
+      <h3>Dove ti mandiamo la proposta?</h3>
+      <p>Ti scriviamo entro 24 ore con un’idea per il tuo sito e il prezzo. Nessun impegno.</p>
+      <input class="step-input" type="email" id="qzEmail" placeholder="latua@email.it" aria-label="La tua email" autocomplete="email" required>
+      <div class="step-tel"><input class="step-input" type="tel" id="qzTel" value="+39 " aria-label="WhatsApp (facoltativo)" autocomplete="tel"><span aria-hidden="true">WhatsApp (facoltativo)</span></div>
+      <input type="text" id="qzSito" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+      <p class="step-err" id="qzErr" role="alert" hidden></p>
+      <div class="qz-nav"><button class="step-back" type="button" data-qz-back>← Indietro</button><button class="step-next" type="button" data-qz-send>Ricevi la proposta →</button></div>
+    </div>
+    <div class="qz-q" data-q="8">
+      <div class="step-done"><div class="big">🚀</div><h3>Fatto!</h3><p>Ti abbiamo appena scritto da info@3-lab.it (se non la vedi, controlla lo spam). Entro 24 ore ti mandiamo la proposta per il tuo sito.</p><div class="qz-nav" style="justify-content:center"><button class="step-next" type="button" data-qz-close>Chiudi</button></div></div>
+    </div>
+</dialog>
 
 <footer>
   <div class="container">
@@ -2098,6 +2180,48 @@ document.querySelectorAll('.pr-switch').forEach(function(sw){
     s.querySelectorAll('[data-chip]').forEach(c=>c.addEventListener('click',()=>{ s.querySelectorAll('[data-chip]').forEach(x=>x.classList.remove('sel')); c.classList.add('sel'); }));
   }
 
+})();
+</script>
+<script>
+(function(){
+  /* Questionario premium: 5 domande a tocco + contatti, inviato allo stesso Worker del form. */
+  const d=document.getElementById('qz'); if(!d||!d.showModal) return;
+  const qs=[].slice.call(d.querySelectorAll('.qz-q')),bar=d.querySelector('[data-qz-bar]'),num=d.querySelector('[data-qz-n]');
+  const NQ=qs.length-1; let cur=1;   // l'ultimo pannello è la conferma
+  const ans={};
+  function show(n){cur=n;qs.forEach(q=>q.classList.toggle('on',+q.dataset.q===n));bar.style.width=(Math.min(n,NQ)/NQ*100)+'%';num.textContent=Math.min(n,NQ)+' / '+NQ;num.parentNode.querySelector('.qz-bar').style.visibility=n>NQ?'hidden':'';num.style.visibility=n>NQ?'hidden':'';if(n===NQ)setTimeout(()=>em.focus(),50)}
+  document.querySelectorAll('[data-qz-open]').forEach(b=>b.addEventListener('click',()=>{d.showModal();if(cur>NQ){Object.keys(ans).forEach(k=>delete ans[k]);d.querySelectorAll('.qz-opt.sel').forEach(o=>o.classList.remove('sel'))}show(cur>NQ?1:cur)}));
+  d.querySelectorAll('[data-qz-close]').forEach(b=>b.addEventListener('click',()=>d.close()));
+  d.addEventListener('click',e=>{if(e.target===d)d.close()});
+  d.querySelectorAll('.qz-q').forEach(q=>q.querySelectorAll('.qz-opts:not([data-multi]) .qz-opt').forEach(o=>o.addEventListener('click',()=>{
+    q.querySelectorAll('.qz-opt').forEach(x=>x.classList.remove('sel'));o.classList.add('sel');ans[q.dataset.t]=o.dataset.v;
+    setTimeout(()=>show(+q.dataset.q+1),220);
+  })));
+  d.querySelectorAll('.qz-opts[data-multi]').forEach(g=>{const q=g.closest('.qz-q');
+    g.querySelectorAll('.qz-opt').forEach(o=>o.addEventListener('click',()=>o.classList.toggle('sel')));
+    q.querySelector('[data-qz-multi]').addEventListener('click',()=>{const v=[].map.call(g.querySelectorAll('.qz-opt.sel'),o=>o.dataset.v);ans[q.dataset.t]=v.length?v.join(', '):'nessuno';show(+q.dataset.q+1)});});
+  d.querySelectorAll('[data-qz-back]').forEach(b=>b.addEventListener('click',()=>{if(cur>1)show(cur-1)}));
+  // indietro anche dalle domande: freccia sinistra
+  d.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'&&cur>1&&cur<NQ)show(cur-1)});
+  const em=document.getElementById('qzEmail'),tel=document.getElementById('qzTel'),err=document.getElementById('qzErr');
+  const telPulito=()=>{const t=tel.value.replace(/[\s.\-()]/g,'');return /^\+?\d{0,3}$/.test(t)?'':t};
+  tel.addEventListener('input',()=>tel.parentNode.classList.toggle('pieno',!!telPulito()));
+  const send=d.querySelector('[data-qz-send]');
+  async function invia(){
+    if(!/.+@.+\..+/.test(em.value.trim())){em.style.borderColor='var(--signal)';em.focus();return}em.style.borderColor='';
+    if(telPulito()&&!/^\+?[0-9]{8,15}$/.test(telPulito())){tel.style.borderColor='var(--signal)';tel.focus();return}tel.style.borderColor='';
+    const msg='Questionario sito premium\n'+Object.keys(ans).map(k=>'- '+k+' '+ans[k]).join('\n');
+    send.disabled=true;const label=send.textContent;send.textContent='Invio…';err.hidden=true;
+    try{
+      const r=await fetch('https://form.3-lab.it/lead',{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({email:em.value.trim(),telefono:telPulito()||null,interesse:'Sito web',messaggio:msg,pagina:location.href,sito:document.getElementById('qzSito').value})});
+      if(!r.ok)throw new Error(r.status);
+      show(NQ+1);
+    }catch(e){err.innerHTML='Invio non riuscito. Riprova, oppure scrivici a <a href="mailto:info@3-lab.it">info@3-lab.it</a>.';err.hidden=false}
+    finally{send.disabled=false;send.textContent=label}
+  }
+  send.addEventListener('click',invia);
+  [em,tel].forEach(i=>i.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();invia()}}));
 })();
 </script>
 </body>
